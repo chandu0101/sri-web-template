@@ -3,13 +3,13 @@ package sri.templates.web.router
 import sri.core.ReactElement
 import sri.templates.web.components.HelloWeb
 import sri.universal.components.View
-import sri.universal.router.{NavigatorRoute, SriRouter, SriRouterConfig, StaticPage}
+import sri.universal.router._
 
 object AppRouter {
 
   object HomePage extends StaticPage
 
-  object config extends SriRouterConfig {
+  object config extends UniversalRouterConfig {
     override val initialRoute: (StaticPage, NavigatorRoute) = defineInitialRoute(HomePage, "Home", HelloWeb())
 
     override def renderScene(route: NavigatorRoute): ReactElement = {
@@ -21,5 +21,5 @@ object AppRouter {
     override val notFound: (StaticPage, NavigatorRoute) = initialRoute
   }
 
-  val router = SriRouter(config)
+  val router = UniversalRouter(config)
 }

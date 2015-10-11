@@ -8,7 +8,6 @@ val sriVersion = "0.1.0-SNAPSHOT"
 
 libraryDependencies ++= Seq("com.github.chandu0101.sri" %%% "web" % sriVersion)
 
-
 val assetsDir = "assets/"
 
 // copy fastOptJS/fullOptJS  fiels to assets directory

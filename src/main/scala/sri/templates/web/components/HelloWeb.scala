@@ -2,7 +2,7 @@ package sri.templates.web.components
 
 import sri.core._
 import sri.universal.components._
-import sri.universal.styles.SriStyleSheet
+import sri.universal.styles.UniversalStyleSheet
 import sri.web.all._
 
 import scala.scalajs.js
@@ -21,10 +21,10 @@ object HelloWeb {
     }
   }
 
-  object styles extends SriStyleSheet {
+  object styles extends UniversalStyleSheet {
 
     val container = style(flexOne,
-      backgroundColor := "rgb(171, 54, 54)",
+      backgroundColor := "rgb(156, 11, 144)",
       justifyContent.center,
       alignItems.center)
 
@@ -36,7 +36,7 @@ object HelloWeb {
 
   }
 
-  val factory = getComponentFactory(js.constructorOf[Component], classOf[Component])
+  val ctor = getTypedConstructor(js.constructorOf[Component], classOf[Component])
 
-  def apply(key: js.UndefOr[String] = js.undefined, ref: js.Function1[Component, _] = null) = createElementNoProps(factory, key = key, ref = ref)
+  def apply(key: js.UndefOr[String] = js.undefined, ref: js.Function1[Component, _] = null) = createElementNoProps(ctor, key = key, ref = ref)
 }

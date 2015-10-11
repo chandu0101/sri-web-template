@@ -19,7 +19,46 @@
 
 <div id="app"></div>
 
+<script>
+    "use strict";
 
+    var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+    function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+    function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+    var BaseMutation = (function () {
+        function BaseMutation() {
+            _classCallCheck(this, BaseMutation);
+        }
+
+        BaseMutation.prototype.checkThis = function checkThis() {
+            console.log(this.constructor);
+            console.log(this.constructor.fragments);
+        };
+
+        return BaseMutation;
+    })();
+
+    var BaseMutation2 = (function (_BaseMutation) {
+        _inherits(BaseMutation2, _BaseMutation);
+
+        function BaseMutation2() {
+            _classCallCheck(this, BaseMutation2);
+
+            _BaseMutation.apply(this, arguments);
+        }
+
+        _createClass(BaseMutation2, null, [{
+            key: "fragments",
+            value: "addtodo",
+            enumerable: true
+        }]);
+
+        return BaseMutation2;
+    })(BaseMutation);
+</script>
 <!--all js dependencies-->
 <script type="text/javascript" src="assets/mainpage-bundle.js"></script>
 <!-- Include Scala.js compiled code -->
