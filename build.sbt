@@ -4,7 +4,7 @@ name := "sri-web-template"
 
 scalaVersion := "2.11.7"
 
-val sriVersion = "0.1.0"
+val sriVersion = "0.2.0"
 
 libraryDependencies ++= Seq("com.github.chandu0101.sri" %%% "web" % sriVersion)
 

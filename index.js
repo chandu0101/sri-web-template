@@ -1,10 +1,10 @@
 var
-     React = require('react-native-for-web'),
-     ReactDOM = require('react-dom'),
-     Navigator = require('bh-react-navigator');
+    React = require('react-native-for-web'),
+    ReactDOM = require('react-dom'),
+    ReactNavigator = require('bh-react-navigator');
 
 window.React = React;
-window.Navigator = Navigator;
+window.ReactNavigator = ReactNavigator;
 window.ReactDOM = ReactDOM;
 
 //js
