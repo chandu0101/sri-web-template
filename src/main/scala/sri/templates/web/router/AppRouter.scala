@@ -4,6 +4,7 @@ import sri.core.ReactElement
 import sri.templates.web.components.HelloWeb
 import sri.universal.components.View
 import sri.universal.router._
+import sri.universal.styles.UniversalStyleSheet
 
 object AppRouter {
 
@@ -13,7 +14,7 @@ object AppRouter {
     override val initialRoute: (StaticPage, NavigatorRoute) = defineInitialRoute(HomePage, "Home", HelloWeb())
 
     override def renderScene(route: NavigatorRoute): ReactElement = {
-      View()(
+      View(style = UniversalStyleSheet.wholeContainer)(
         super.renderScene(route)
       )
     }

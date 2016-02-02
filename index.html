@@ -5,60 +5,61 @@
     <title>Sri web template</title>
     <style>
         html {
-            font-family: sans-serif;
+            font-family:  sans-serif;
+            /* 1 */
+            -ms-text-size-adjust: 100%;
+            /* 2 */
+            -webkit-text-size-adjust: 100%;
+            /* 2 */
         }
-
         body {
             margin: 0;
             font-size: 13px;
             line-height: 20px;
+            background:#ECEBEB;
         }
+
+        .react-root {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+
+            box-sizing: border-box;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+
+        }
+        .react-root .react-view {
+            position: relative;
+
+            box-sizing: border-box;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+
+        }
+
     </style>
 </head>
 <body>
 
-<div id="app"></div>
+<div id="app"  class="react-root"></div>
 
-<script>
-    "use strict";
-
-    var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-    function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-    function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-    var BaseMutation = (function () {
-        function BaseMutation() {
-            _classCallCheck(this, BaseMutation);
-        }
-
-        BaseMutation.prototype.checkThis = function checkThis() {
-            console.log(this.constructor);
-            console.log(this.constructor.fragments);
-        };
-
-        return BaseMutation;
-    })();
-
-    var BaseMutation2 = (function (_BaseMutation) {
-        _inherits(BaseMutation2, _BaseMutation);
-
-        function BaseMutation2() {
-            _classCallCheck(this, BaseMutation2);
-
-            _BaseMutation.apply(this, arguments);
-        }
-
-        _createClass(BaseMutation2, null, [{
-            key: "fragments",
-            value: "addtodo",
-            enumerable: true
-        }]);
-
-        return BaseMutation2;
-    })(BaseMutation);
-</script>
 <!--all js dependencies-->
 <script type="text/javascript" src="assets/mainpage-bundle.js"></script>
 <!-- Include Scala.js compiled code -->
