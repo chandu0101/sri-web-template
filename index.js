@@ -4,6 +4,11 @@ var React = require('react-web'),
 window.React = React;
 window.ReactDOM = ReactDOM;
 
+window.History = require('history');
+
+//window.PouchDB = require("pouchdb");
+//require('pouchdb/extras/memory');
+
 //js
 
 

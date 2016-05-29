@@ -24,12 +24,17 @@ module.exports = {
         }),
         new webpack.DefinePlugin({
             'process.env': {
-                'NODE_ENV': JSON.stringify('development'),
+                'NODE_ENV': JSON.stringify('development')
             }
         })
     ],
     module: {
         loaders: [
+
+            {
+                test: /\.json$/,
+                loader: "json-loader"
+            },
 
             {
                 test: /\.css$/,
@@ -41,7 +46,8 @@ module.exports = {
                 loaders: [
                     'url-loader?limit=8192',
                     'image-webpack?optimizationLevel=7&progressive=true']
-            } // inline base64 URLs for <=8k images, direct URLs for the rest
+            } // inline base64 URLs for <=8k images, direct URLs for the rest,
+
         ]
     }
 
