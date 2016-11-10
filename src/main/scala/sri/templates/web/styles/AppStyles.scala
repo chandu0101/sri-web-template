@@ -1,11 +1,9 @@
 package sri.templates.web.styles
 
 
-import sri.scalacss.Defaults._
 import sri.templates.web.components.TopNav
-
 import scalacss.Defaults._
-import scalacss.mutable.GlobalRegistry
+import scalacss.internal.mutable.GlobalRegistry
 
 object AppStyles {
 

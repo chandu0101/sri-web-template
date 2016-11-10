@@ -4,12 +4,12 @@ name := "sri-web-template"
 
 scalaVersion := "2.11.8"
 
-val sriVersion = "0.5.0"
+val sriVersion = "0.6.0"
 
-val sriscalaCssVersion = "2016.5.0"
+val sriscalaCssVersion = "2016.11.0"
 
-libraryDependencies ++= Seq("com.github.chandu0101.sri" %%% "web" % sriVersion,
-  "com.github.chandu0101.sri" %%% "scalacss" % sriscalaCssVersion)
+libraryDependencies ++= Seq("com.github.chandu0101" %%% "sri-web" % sriVersion,
+  "com.github.chandu0101" %%% "sri-scalacss" % sriscalaCssVersion)
 
 val assetsDir = "assets/"
 

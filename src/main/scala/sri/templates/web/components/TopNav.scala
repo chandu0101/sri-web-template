@@ -69,13 +69,9 @@ object TopNav {
 
   }
 
+  js.constructorOf[Component].contextTypes = sri.web.router.routerContextTypes
 
-  val ctor = getTypedConstructor(js.constructorOf[Component], classOf[Component])
-
-  ctor.contextTypes = sri.web.router.routerContextTypes
-
-
-  def apply(ref: js.UndefOr[String] = "", key: js.Any = {}) = createElementNoProps(ctor)
+  def apply(ref: js.UndefOr[String] = "", key: js.Any = {}) = makeElement[Component]
 
 }
 
