@@ -4,7 +4,7 @@ name := "sri-web-template"
 
 scalaVersion := "2.11.8"
 
-val sriVersion = "0.7.0"
+val sriVersion = "0.7.1"
 
 val sriscalaCssVersion = "2017.1.0"
 
