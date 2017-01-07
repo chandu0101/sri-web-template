@@ -1,4 +1,4 @@
-package sri.templates.web.styles
+package sri.web.template.styles
 
 object Colors {
 

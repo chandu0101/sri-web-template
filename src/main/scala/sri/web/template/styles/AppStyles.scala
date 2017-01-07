@@ -1,7 +1,7 @@
-package sri.templates.web.styles
+package sri.web.template.styles
 
 
-import sri.templates.web.components.TopNav
+import sri.web.template.components.TopNav
 import scalacss.Defaults._
 import scalacss.internal.mutable.GlobalRegistry
 

@@ -1,10 +1,10 @@
-package sri.templates.web.routes
+package sri.web.template.routes
 
 import sri.core.ReactElement
 import sri.scalacss.Defaults._
-import sri.templates.web.components._
-import sri.templates.web.screens.HomeScreen
-import sri.templates.web.styles.GlobalStyle
+import sri.web.template.components._
+import sri.web.template.screens.HomeScreen
+import sri.web.template.styles.GlobalStyle
 import sri.web.router._
 import sri.web.vdom.htmltags._
 object AppRouter {

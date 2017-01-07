@@ -1,8 +1,8 @@
-package sri.templates.web.components
+package sri.web.template.components
 
 import sri.scalacss.Defaults._
-import sri.templates.web.routes.AppRouter.HomePage
-import sri.templates.web.styles.Colors
+import sri.web.template.routes.AppRouter.HomePage
+import sri.web.template.styles.Colors
 import sri.web.all._
 import sri.web.router.{WebDynamicPage, WebRouterComponent, WebStaticPage}
 import sri.web.vdom.htmltags._

@@ -1,6 +1,6 @@
-package sri.templates.web.screens
+package sri.web.template.screens
 
-import sri.templates.web.styles.GlobalStyle
+import sri.web.template.styles.GlobalStyle
 import sri.web.all._
 import sri.web.vdom.htmltags._
 import sri.core._

@@ -1,4 +1,4 @@
-package sri.templates.web.components
+package sri.web.template.components
 
 import sri.core._
 import sri.web.all._

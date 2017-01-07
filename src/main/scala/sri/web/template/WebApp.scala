@@ -1,11 +1,10 @@
-package sri.templates.web
+package sri.web.template
 
 import org.scalajs.dom
-import sri.templates.web.routes.AppRouter
-import sri.templates.web.styles.AppStyles
+import sri.web.template.routes.AppRouter
+import sri.web.template.styles.AppStyles
 import sri.web.ReactDOM
 
-import scala.scalajs.js.Dynamic.{global => g, literal => json}
 import scala.scalajs.js.JSApp
 import scala.scalajs.js.annotation.JSExport
 
