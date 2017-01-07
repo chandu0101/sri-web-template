@@ -7,8 +7,8 @@ var NODE_ENV = process.env.NODE_ENV;
 
 module.exports = {
 
-    entry: {
-        mainpage: './index.js'
+   entry: {
+        mainpage: './assets/scalajs-output-launcher.js'
     },
     output: {
         path: __dirname + '/assets',

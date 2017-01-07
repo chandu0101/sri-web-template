@@ -6,7 +6,9 @@ a template project for [Sri](https://github.com/chandu0101/sri) web
 
 ```scala
 
-sbt ~fastOptJS
+sbt ~fastOptWeb //DEV
+   or
+sbt ~fullOptWeb //Prod   
 
 //open new terminal
 
